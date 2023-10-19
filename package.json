@@ -25,6 +25,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "build": "rm -rf dist && tsc",
+    "prepare": "rm -rf ./dist && tsc",
     "prepublishOnly": "yarn build"
   },
   "dependencies": {
