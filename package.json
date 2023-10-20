@@ -11,7 +11,7 @@
   "typesVersions": {
     "*": {
       "static": [
-        "dist/static/index.d.ts"
+        "types/static/index.d.ts"
       ]
     }
   },
