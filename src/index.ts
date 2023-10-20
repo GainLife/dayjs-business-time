@@ -70,7 +70,7 @@ const businessTime: PluginFunc = (
 
   function isHoliday() {
     const today = this.format('YYYY-MM-DD');
-    const holidays = getHolidays();
+    const holidays = getHolidays() || [];
 
     return holidays.includes(today);
   }
@@ -476,7 +476,7 @@ const businessTimeStatic: PluginFunc = (
 
   function getDefaultWorkingHours() { return DEFAULT_WORKING_HOURS; }
 
-  function isHoliday(date: Dayjs, { holidays }: BusinessOpts) {
+  function isHoliday(date: Dayjs, { holidays = [] }: BusinessOpts) {
     const today = date.format('YYYY-MM-DD');
     return holidays.includes(today);
   }
@@ -543,7 +543,7 @@ const businessTimeStatic: PluginFunc = (
 
     const dayName = DaysNames[date.day()];
 
-    const businessHours = (opts.businessHoursMap || DEFAULT_WORKING_HOURS)[dayName];
+    const businessHours = (opts.businessHoursMap || DEFAULT_WORKING_HOURS)[dayName] || [];
 
     return businessHours.reduce((segments, businessTime) => {
       let { start, end } = businessTime;
