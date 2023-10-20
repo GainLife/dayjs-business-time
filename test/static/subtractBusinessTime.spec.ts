@@ -1,5 +1,5 @@
 import dayjs from 'dayjs';
-import { businessTimeStatic } from '../../src';
+import businessTimeStatic from '../../src/static';
 
 let opts;
 

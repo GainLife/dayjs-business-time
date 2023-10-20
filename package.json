@@ -3,6 +3,10 @@
   "version": "1.0.4",
   "author": "Alexsander Lira",
   "main": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./static": "./dist/static/index.js"
+  },
   "types": "types/index.d.ts",
   "license": "MIT",
   "keywords": [
