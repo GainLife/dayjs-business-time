@@ -466,4 +466,4 @@ const businessTime: PluginFunc = (
 };
 
 export default businessTime;
-const mod: any = module.exports = businessTime;
+exports = module.exports = businessTime;

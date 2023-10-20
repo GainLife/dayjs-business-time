@@ -4,8 +4,12 @@
   "author": "Alexsander Lira",
   "main": "dist/index.js",
   "exports": {
-    ".": "./dist/index.js",
-    "./static": "./dist/static/index.js"
+    ".": {
+      "default": "./dist/index.js"
+    },
+    "static": {
+      "default": "./dist/static/index.js"
+    }
   },
   "types": "types/index.d.ts",
   "license": "MIT",

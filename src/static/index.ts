@@ -434,4 +434,4 @@ const businessTimeStatic: PluginFunc = (
 };
 
 export default businessTimeStatic;
-const mod: any = module.exports = businessTimeStatic;
+exports = module.exports = businessTimeStatic;
