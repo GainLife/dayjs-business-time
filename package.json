@@ -3,6 +3,7 @@
   "version": "1.0.4",
   "author": "Alexsander Lira",
   "main": "dist/index.js",
+  "types": "types/index.d.ts",
   "exports": {
     ".": {
       "default": "./dist/index.js"
@@ -11,7 +12,11 @@
       "default": "./dist/static/index.js"
     }
   },
-  "types": "types/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "static": ["dist/static/index.d.ts"]
+    }
+  },
   "license": "MIT",
   "keywords": [
     "dayjs",
