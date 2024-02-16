@@ -1,12 +1,12 @@
-import IsSameOrBefore from 'dayjs/plugin/isSameOrBefore';
-import IsSameOrAfter from 'dayjs/plugin/isSameOrAfter';
+import IsSameOrBefore from 'dayjs/esm/plugin/isSameOrBefore';
+import IsSameOrAfter from 'dayjs/esm/plugin/isSameOrAfter';
 import dayjs, {
   BusinessOpts,
   BusinessTimeSegment,
   BusinessUnitType,
   Dayjs,
   PluginFunc,
-} from 'dayjs';
+} from 'dayjs/esm';
 
 enum DaysNames {
   sunday = 0,

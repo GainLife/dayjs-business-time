@@ -1,14 +1,14 @@
-import UpdateLocale from 'dayjs/plugin/updateLocale';
-import LocaleData from 'dayjs/plugin/localeData';
-import IsSameOrBefore from 'dayjs/plugin/isSameOrBefore';
-import IsSameOrAfter from 'dayjs/plugin/isSameOrAfter';
+import UpdateLocale from 'dayjs/esm/plugin/updateLocale';
+import LocaleData from 'dayjs/esm/plugin/localeData';
+import IsSameOrBefore from 'dayjs/esm/plugin/isSameOrBefore';
+import IsSameOrAfter from 'dayjs/esm/plugin/isSameOrAfter';
 import dayjs, {
   BusinessHoursMap,
   BusinessTimeSegment,
   BusinessUnitType,
   Dayjs,
   PluginFunc,
-} from 'dayjs';
+} from 'dayjs/esm';
 
 const DEFAULT_WORKING_HOURS = {
   sunday: null,
@@ -466,4 +466,3 @@ const businessTime: PluginFunc = (
 };
 
 export default businessTime;
-exports = module.exports = businessTime;

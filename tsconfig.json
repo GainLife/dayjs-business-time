@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
-    "module": "node16",
-    "moduleResolution": "node16",
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "Node",
     "removeComments": true,
     "declaration": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "target": "es5",
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",

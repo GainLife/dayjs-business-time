@@ -1,9 +1,9 @@
-import { PluginFunc } from 'dayjs'
+import { PluginFunc } from 'dayjs/esm'
 
 declare const plugin: PluginFunc
 export default plugin;
 
-declare module 'dayjs' {
+declare module 'dayjs/esm' {
   export function getHolidays(): string[];
   export function setHolidays(holidays: string[]): void;
   export function getBusinessTime(): BusinessHoursMap;

@@ -12,8 +12,7 @@ module.exports = {
   ],
   root: true,
   env: {
-    node: true,
-    jest: true,
+    node: true
   },
   rules: {
     '@typescript-eslint/interface-name-prefix': 'off',
